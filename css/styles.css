@@ -12,6 +12,10 @@ body {
   background-size: cover;
 }
 
+.centerText { 
+  text-align: center;
+ }
+
 section {
    min-height: 100%;
 }
@@ -30,6 +34,7 @@ p {
 a{
   color: #fff;
 }
+
 
 footer {
   position: absolute;
