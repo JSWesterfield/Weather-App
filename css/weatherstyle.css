@@ -1,0 +1,640 @@
+/*
+
+Template 2083 Steak House
+
+http://www.tooplate.com/view/2083-steak-house
+
+*/
+
+body {
+		background: #ffffff;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+    background: #888;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-transform: capitalize;
+	}
+
+
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
+}
+
+
+/* Typography */
+h1,h2,h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+h2 {
+  color: #333;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+#contact h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #444;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#menu h3 {
+   color: #555;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:visited,
+a:focus {
+  outline: none;
+  text-decoration: none !important;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* hover min css */
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before {
+  background-color: #ffffff;
+}
+
+
+/* All Section styles */
+#about,
+#feature,
+#video,
+#menu,
+#muse,
+#gallery,
+#contact {
+  color: #656565;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#feature,
+#video,
+#muse,
+#gallery,
+#contact {
+  text-align: center;
+}
+
+#feature,
+#muse {
+  background: rgb(240,240,240);
+}
+
+/* section title */
+.section-title {
+  padding-bottom: 70px;
+}
+#about .section-title,
+#menu .section-title {
+  text-align: center;
+}
+#contact .section-title {
+  color: #f0f0f0;
+}
+
+
+/* Preloader section  */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-pulse {
+  width: 60px;
+  height: 60px;
+  background-color: #222;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+
+/* Home section */
+#home {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+        align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#home .gradient-overlay {
+  background:black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, black , black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black, black); /* Standard syntax */
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#home .btn {
+  background: transparent;
+  border: 3px solid #ffffff;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 13px 30px;
+  margin-top: 34px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#home .btn:hover,
+#home .btn:focus {
+  color: purple;
+  opacity: 0.7;
+}
+
+/*Projects should have a white lettering w/ text shadow, now sure how to create a transition with the gradient*/
+a.project-text {
+  color:#ffffff;
+  text-shadow: 2px 2px black;
+}
+
+
+/*filter css*/
+.filter-wrapper {
+    width: 100%;
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+
+.filter-wrapper li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.filter-wrapper li a {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 8px 17px;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.filter-wrapper li a:hover,
+.filter-wrapper li a:focus {
+  color: purple;
+}
+
+/*isotope box css*/
+.iso-box-section {
+    width: 100%;
+}
+
+.iso-box-wrapper {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    position: relative;
+}
+
+.iso-box {
+    position: relative;
+    min-height: 50px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.iso-box > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fluid-img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Contact section  */
+#contact {
+  background: url('../images/weatherly2.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#contact .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:hover {
+  border-color: #ddd;
+}
+
+#contact input {height: 45px;}
+
+#contact input[type='submit'] {
+  background: #ffffff;
+  border-radius: 4px;
+  color: #757575;
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 13px #000;
+
+}
+#contact input[type='submit']:hover {
+  border-color: transparent;
+  color: #ffffff;
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,blue , purple); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, blue, purple); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, blue, purple); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, blue , purple); /* Standard syntax */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+  text-shadow: 0 0 13px #ffffff;
+
+}
+
+
+/* Footer section  */
+footer {
+  background-color: #141414;
+  color: #757575;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+}
+
+footer strong {
+  color: #f0f0f0;
+  font-size: 20px;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+
+/* copyright section  */
+#copyright p {
+  padding: 20px;
+}
+
+
+/* social icon section  */
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icon li a {
+  border-radius: 100px;
+  color: #626262;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-right: 10px;
+}
+
+.social-icon li a:hover {
+  background: #111;
+  color: #ffffff;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 980px) {
+
+  #home {
+    height: 65vh;
+  }
+
+  #feature .col-md-4:last-child,
+  #about .col-md-4 {
+    margin-top: 42px;
+  }
+
+  #muse .muse-thumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #muse .join-muse {
+    padding: 71px 50px;
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  h1 {font-size: 70px;}
+
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar-default .navbar-brand {
+    line-height: 46px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .navbar-default .navbar-brand {
+    line-height: 15px;
+  }
+  .navbar-default .navbar-nav li a {
+    line-height: 30px;
+  }
+
+  #feature .col-md-4,
+  #about .col-md-5,
+  footer .col-md-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .filter-wrapper {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  #home {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  #feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #about,
+  #feature,
+  #video,
+  #menu,
+  #muse,
+  #gallery,
+  #contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #menu .media-object img {
+    width: 100%;
+    padding-bottom: 14px;
+  }
+  #menu .media-object span.menu-price {
+    top: 30%;
+    left: 6%;
+  }
+
+  footer {text-align: center;}
+
+}
+
+/*Change banner text at top of page*/
+#title_text {
+  text-shadow: 1px 1px #808080;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+#subtitle_text {
+  text-shadow: 1px 1px #808080;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    color: #757575; /* For browsers that do not support gradients */
+}
+
+.fa-facebook:hover {
+    color: purple; /* For browsers that do not support gradients */
+}
+
+/* Twitter */
+.fa-twitter {
+    color: #757575; /* For browsers that do not support gradients */
+}
+
+.fa-twitter:hover {
+    color: purple; /* For browsers that do not support gradients */
+}
+
+/* Github */
+.fa-github {
+    color: #757575; /* For browsers that do not support gradients */
+}
+
+.fa-github:hover {
+    color: purple; /* For browsers that do not support gradients */
+}
+
+/* Linkedin */
+.fa-linkedin {
+    color: #757575; /* For browsers that do not support gradients */
+}
+
+.fa-linkedin:hover {
+    color: purple; /* For browsers that do not support gradients */
+}
+
+/*Added cool Constellation Canvas, w/ mouseOver */
+.gradient-overlay {
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 10px;
+  line-height: 150%; }
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; 
+}
+
+#copyright {
+  background: #ffffff;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, sans-serif;
+  font-size: 2em;
+  text-shadow: 0 0 10px #000;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-transform: capitalize;
+}
+
+#temperature {
+  text-decoration: none;
+  text-align: 100%;
+  border-bottom: 0.05em dotted white;
+}
+
+#weather-image {
+  size: 5px;
+}

@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "moment-timezone-with-data-2010-2020",
+        "scope": null,
+        "escapedName": "moment-timezone-with-data-2010-2020",
+        "name": "moment-timezone-with-data-2010-2020",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jacobwesterfield/Desktop/Portfolio-Site"
+    ]
+  ],
+  "_from": "moment-timezone-with-data-2010-2020@latest",
+  "_id": "moment-timezone-with-data-2010-2020@0.4.0",
+  "_inCache": true,
+  "_location": "/moment-timezone-with-data-2010-2020",
+  "_nodeVersion": "6.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/moment-timezone-with-data-2010-2020-0.4.0.tgz_1466117412647_0.12876681867055595"
+  },
+  "_npmUser": {
+    "name": "mohsen",
+    "email": "me@azimi.me"
+  },
+  "_npmVersion": "3.9.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "moment-timezone-with-data-2010-2020",
+    "scope": null,
+    "escapedName": "moment-timezone-with-data-2010-2020",
+    "name": "moment-timezone-with-data-2010-2020",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/moment-timezone-with-data-2010-2020/-/moment-timezone-with-data-2010-2020-0.4.0.tgz",
+  "_shasum": "5727ee446baa7509c952a8ba94bafa6a169402e0",
+  "_shrinkwrap": null,
+  "_spec": "moment-timezone-with-data-2010-2020",
+  "_where": "/Users/jacobwesterfield/Desktop/Portfolio-Site",
+  "author": {
+    "name": "Mohsen Azimi",
+    "email": "me@azimi.me"
+  },
+  "dependencies": {},
+  "description": "moment-timezone-with-data-2010-2020 in npm",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "5727ee446baa7509c952a8ba94bafa6a169402e0",
+    "tarball": "https://registry.npmjs.org/moment-timezone-with-data-2010-2020/-/moment-timezone-with-data-2010-2020-0.4.0.tgz"
+  },
+  "keywords": [
+    "moment",
+    "timezone"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "mohsen",
+      "email": "me@azimi.me"
+    }
+  ],
+  "name": "moment-timezone-with-data-2010-2020",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.0"
+}
