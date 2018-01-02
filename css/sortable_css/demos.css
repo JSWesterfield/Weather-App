@@ -1,0 +1,22 @@
+/*body {
+	font-family: Arial, Helvetica, sans-serif;
+
+	//dont want to change the font of the entire body
+}*/
+
+.demo-loading {
+	visibility: hidden;
+}
+
+table {
+	font-size: 1em;
+}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
