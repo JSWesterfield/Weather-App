@@ -619,7 +619,4 @@ h4.state-country {
  * Released under the MIT license.
  * http://jquery.org/license
  */
-.ui-sortable-handle {
-	-ms-touch-action: none;
-	touch-action: none;
-}
+
