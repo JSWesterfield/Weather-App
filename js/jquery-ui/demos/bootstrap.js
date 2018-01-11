@@ -75,19 +75,19 @@ function fixPaths( modules ) {
 }
 
 // Hide the page while things are loading to prevent a FOUC
-document.documentElement.className = "demo-loading";
+// document.documentElement.className = "demo-loading";
 
-require.config( {
-	baseUrl: window.location.pathname.indexOf( "demos/" ) !== -1 ? "../../ui" : "../../../ui",
-	paths: {
-		jquery: "../external/jquery/jquery",
-		external: "../external/"
-	},
-	shim: {
-		"external/globalize/globalize.culture.de-DE": [ "external/globalize/globalize" ],
-		"external/globalize/globalize.culture.ja-JP": [ "external/globalize/globalize" ]
-	}
-} );
+// require.config( {
+// 	baseUrl: window.location.pathname.indexOf( "demos/" ) !== -1 ? "../../ui" : "../../../ui",
+// 	paths: {
+// 		jquery: "../external/jquery/jquery",
+// 		external: "../external/"
+// 	},
+// 	shim: {
+// 		"external/globalize/globalize.culture.de-DE": [ "external/globalize/globalize" ],
+// 		"external/globalize/globalize.culture.ja-JP": [ "external/globalize/globalize" ]
+// 	}
+// } );
 
 // Replace effects all shortcut modules with all the effects modules
 if ( modules && modules.indexOf( "effects-all" ) !== -1 ) {
@@ -100,13 +100,13 @@ if ( !composite ) {
 }
 modules = fixPaths( modules );
 
-require( modules, function() {
-	var newScript = document.createElement( "script" );
+// require( modules, function() {
+// 	var newScript = document.createElement( "script" );
 
-	document.documentElement.className = "";
+// 	document.documentElement.className = "";
 
-	newScript.text = "( function() { " + script.innerHTML + " } )();";
-	document.body.appendChild( newScript ).parentNode.removeChild( newScript );
-} );
+// 	newScript.text = "( function() { " + script.innerHTML + " } )();";
+// 	document.body.appendChild( newScript ).parentNode.removeChild( newScript );
+// } );
 
 } )();

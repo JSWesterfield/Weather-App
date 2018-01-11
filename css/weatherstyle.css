@@ -90,7 +90,13 @@ p {
 
 a {
   text-decoration: none !important;
+  color: white;
 }
+
+a:hover {
+  color: beige;
+}
+
 a:visited,
 a:focus {
   outline: none;
@@ -252,6 +258,12 @@ a.project-text {
   background-size: cover;
   background-position: center center;
   position: relative;
+  margin: 1px;
+  border: black 1px solid;
+  padding: 1px;
+  cursor: pointer;
+  font-family: verdana, tahoma, arial;
+  background-color: rgb(238, 238, 238);
 }
 
 #contact .overlay {
@@ -296,7 +308,7 @@ a.project-text {
 #contact input[type='submit']:hover {
   border-color: transparent;
   color: #ffffff;
-  background: blue; /* For browsers that do not support gradients */
+  background: goldenrod; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left,goldenrod , yellow); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, goldenrod, yellow); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, goldenrod, yellow); /* For Firefox 3.6 to 15 */
@@ -392,7 +404,6 @@ footer strong {
   }
 
 }
-
 
 @media (max-width: 900px) {
 
@@ -490,7 +501,7 @@ footer strong {
 }
 
 .fa-facebook:hover {
-    color: purple; /* For browsers that do not support gradients */
+    color: lightblue; /* For browsers that do not support gradients */
 }
 
 /* Twitter */
@@ -499,7 +510,7 @@ footer strong {
 }
 
 .fa-twitter:hover {
-    color: purple; /* For browsers that do not support gradients */
+    color: lightblue; /* For browsers that do not support gradients */
 }
 
 /* Github */
@@ -508,7 +519,7 @@ footer strong {
 }
 
 .fa-github:hover {
-    color: purple; /* For browsers that do not support gradients */
+    color: lightblue; /* For browsers that do not support gradients */
 }
 
 /* Linkedin */
@@ -517,7 +528,7 @@ footer strong {
 }
 
 .fa-linkedin:hover {
-    color: purple; /* For browsers that do not support gradients */
+    color: lightblue; /* For browsers that do not support gradients */
 }
 
 /*Added cool Constellation Canvas, w/ mouseOver */
@@ -560,23 +571,17 @@ canvas {
   text-decoration: none;
   text-align: 100%;
   margin-left: 400px;
+  margin-top: 10px;
 }
 
-#weather-image {
+.weather-image {
   size: 5px;
   width: 50px;
   height:50px;
+  float: right;  
 }
 
-#weather-image, #temperature {
-  float: right;
-}
-
-#weatherly-title {
-  padding-top: 10px; 
-}
-
-h2.city, h4.state-country, .day-date-time {
+h2.city, h4.state-country, h2#userCity, h4#day-date-time, .day-date-time {
   float: left;
 }
  
@@ -584,6 +589,18 @@ h4.state-country {
   margin-right: 5px;
 }
 
+h1.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#weatherly-title {
+  padding-top: 8px; 
+}
 
 /* Start of Test Drag and Drop section */
 #target {
@@ -592,20 +609,6 @@ h4.state-country {
   background-color: royalblue;
   border: 2px solid blue;
   position: absolute;
-}
-
-.DragContainer, .OverDragContainer {
-    margin: 1px;
-    border: black 2px solid;
-    padding: 1px;
-}
-
-.DragBox, .OverDragBox, .DragDragBox, .miniDragBox {
-    border: grey 1px solid;
-    padding: 0.5px;
-    cursor: pointer;
-    font-family: verdana, tahoma, arial;
-    background-color: rgb(238, 238, 238);
 }
 
 
@@ -619,4 +622,32 @@ h4.state-country {
  * Released under the MIT license.
  * http://jquery.org/license
  */
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
 
+#center-sortable {
+  margin-top: 8px;  
+  width: 100%;
+  border: 3px solid green;
+}
+
+#sortable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 60%; 
+}
+
+#sortable li span { 
+    position: absolute; 
+}
+
+#sortable li { 
+    margin: 0 3px 3px 3px; 
+    padding: 0.4em; 
+    padding-left: 1.5em; 
+    font-size: 1.4em; 
+    height: 25px; 
+}
