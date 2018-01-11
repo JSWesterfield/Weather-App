@@ -5,7 +5,7 @@ var weatherData = {
   weather: document.querySelector ("#weather"),
   temperature: document.querySelector("#temperature"),
   temperatureValue: 0,
-  units: "°C"
+  units: "°F"
   
 };
 
@@ -15,18 +15,30 @@ function roundTemperature(temperature){
 		}
 
 function switchUnits (){
-  
-  if (weatherData.units == "°C") {
-    weatherData.temperatureValue = roundTemperature(weatherData.temperatureValue * 9/5 + 32);
-    weatherData.units = "°F";
-  
-} else {
-  weatherData.temperatureValue = roundTemperature ((weatherData.temperatureValue -32) * 5/9);
-    weatherData.units = "°C";  
-}
+  //original formula for initially grabbing celsius data 
+  //   if (weatherData.units == "°C") {
+  //     weatherData.temperatureValue = roundTemperature(weatherData.temperatureValue * 9/5 + 32);
+  //     weatherData.units = "°F";
+    
+  // } else {
+  //   weatherData.temperatureValue = roundTemperature ((weatherData.temperatureValue -32) * 5/9);
+  //     weatherData.units = "°C";  
+  // }
 
-  weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units + " ";
-}
+  //   weatherData.temperature.innerHTML = weatherData.temperatureValue + weatherData.units + " ";
+  // }
+  if (weatherData.units == "°F") {
+      //if when the user clicks on the switchUnit function, which should initially start with Fahrenheit degree response data, we take this temperatureValue
+      // and minus it by 32 degrees and take this value and multiply the remainder by 5/9ths. We take this product value and use the 
+      // roundTemperature method to set this new Temperature value to a 1-3 digit rounded integer value, and not one that would be a double.
+      weatherData.temperatureValue = roundTemperature  ((weatherData.temperatureValue -32) * 5/9);
+      weatherData.units = "°C";
+  }
+  else {
+      //else we start with temperature unit, fahrenheit, for our weatherData.temperatureValue
+      weatherData.temperatureValue = roundTemperature ((weatherData.temperatureValue * 9/5) + 32);
+      weatherData.units = "°F";
+  }
 
 
 function getLocationAndWeather(){
@@ -57,8 +69,10 @@ function getLocationAndWeather(){
     xhr.addEventListener("error", function(err){
       alert("Could not complete the request");
     }, false);
-
-    xhr.open("GET", "https://fourtonfish.com/tutorials/weather-web-app/getlocationandweather.php?owapikey=e2db5b0453a25a492e87ad8b03046a7c&units=metric", true);
+    
+    // I switched the last query parameter from '=metric' to '=imperial' to display Fahrenheit degree data initially instead of celesius, 
+    // I will have a switchUnits() function to toggle between the two temperature standards
+    xhr.open("GET", "https://fourtonfish.com/tutorials/weather-web-app/getlocationandweather.php?owapikey=e2db5b0453a25a492e87ad8b03046a7c&units=imperial", true);
     xhr.send();
   }
   else{
